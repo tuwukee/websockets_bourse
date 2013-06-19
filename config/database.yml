@@ -3,18 +3,18 @@ development:
   encoding: unicode
   database: websockets_bourse_development
   pool: 5
-  username: websockets_bourse
+  username: postgres
 
 test:
   adapter: postgresql
   encoding: unicode
   database: websockets_bourse_test
   pool: 5
-  username: websockets_bourse
+  username: postgres
 
 production:
   adapter: postgresql
   encoding: unicode
   database: websockets_bourse_production
   pool: 5
-  username: websockets_bourse
+  username: postgres
