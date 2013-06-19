@@ -9,6 +9,7 @@ html
     .container
       = render 'layouts/header'
       .row
-        #flash-message
+        #flash-messages
+          = flash_messages
         = yield
 
