@@ -1,5 +1,7 @@
 WebsocketsBourse::Application.routes.draw do
   devise_for :users
+  resources :items
 
-  root :to => "static_pages#home"
+  get "static_pages/about", :as => :about
+  root :to => "items#index"
 end
