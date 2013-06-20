@@ -11,7 +11,9 @@ class ItemsController < ApplicationController
   end
 
   def create
-    if @item = Item.create(params[:item])
+  	@item = Item.new(params[:item])
+
+    if @item.save
       redirect_to @item, :notice => "Item was successfully created"
     else
       render action: "new"
