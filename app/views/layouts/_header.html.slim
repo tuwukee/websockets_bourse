@@ -1,10 +1,10 @@
 header
   .navbar.navbar-fixed-top
     .navbar-inner#header_gradient
-      .container
+      .main-container
+        ul.nav.pull-left
+          li.brand= link_to "Websockets Bourse", root_path
         - if user_signed_in?
-          ul.nav.pull-left
-            li= link_to "Home", root_path
           ul.nav.pull-right
             li= link_to current_user.name, '#'
             li= link_to "Sign Out", destroy_user_session_path, :method => :delete
