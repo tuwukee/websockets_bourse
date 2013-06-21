@@ -13,6 +13,8 @@ html
           #flash-messages
             = flash_messages
           = yield
-        .span#tape-content
-          = render 'shared/tape'
+        .span
+          legend#news Bourse news
+          #tape-content
+            = render 'shared/tape'
 
