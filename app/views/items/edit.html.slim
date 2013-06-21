@@ -1,3 +1,10 @@
 legend Edit item
 
-= render "form"
+
+.raw
+  .span12
+    p Picture
+    = image_tag @item.picture.url(:thumb)
+    = render "form"
+  .span4
+    = link_to "Back to item", item_path(@item), :class => "btn right-side"

@@ -1,1 +1,7 @@
 legend = @item.name
+
+.raw
+  .span12
+    = image_tag @item.picture.url(:medium)
+  .span4
+    = link_to "Edit", edit_item_path(@item), :class => "btn right-side"

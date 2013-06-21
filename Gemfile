@@ -13,3 +13,4 @@ end
 gem 'jquery-rails'
 gem 'devise'
 gem 'slim'
+gem "paperclip", "~> 3.0"
