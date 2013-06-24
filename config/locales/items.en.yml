@@ -8,3 +8,5 @@ en:
       back: "Back to item"
     index:
       title: "Inside store"
+    new:
+      title: "New item"

@@ -3,4 +3,6 @@ class Item < ActiveRecord::Base
   has_attached_file :picture, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => ActionController::Base.helpers.asset_path("missing_:style.png")
 
   validates_presence_of :amount, :name, :price
+  has_many :sell_items
+  has_many :users, :through => :sell_items
 end

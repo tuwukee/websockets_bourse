@@ -4,4 +4,7 @@ class User < ActiveRecord::Base
 
   attr_accessible :email, :password, :password_confirmation, :remember_me, :name
   validates_presence_of :name
+
+  has_many :sell_items
+  has_many :items, :through => :sell_items
 end
