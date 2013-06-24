@@ -1,5 +1,4 @@
-legend Edit item
-
+legend = t("item.edit.title")
 
 .raw
   .span12
@@ -7,4 +6,4 @@ legend Edit item
     = image_tag @item.picture.url(:thumb)
     = render "form"
   .span4
-    = link_to "Back to item", item_path(@item), :class => "btn right-side"
+    = link_to t("item.edit.back"), item_path(@item), :class => "btn right-side"

@@ -1,0 +1,10 @@
+en:
+  item:
+    show:
+      edit: "Edit"
+      delete: "Delete"
+    edit:
+      title: "Edit item"
+      back: "Back to item"
+    index:
+      title: "Inside store"

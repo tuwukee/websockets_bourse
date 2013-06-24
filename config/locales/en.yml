@@ -2,4 +2,13 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  links:
+    title: "Websockets Bourse"
+    new_item: "Add new item"
+    about: "About"
+    sign_in: "Sign in"
+    sign_out: "Sign Out"
+  application:
+    title:  "WebsocketsBourse"
+    error: "Error"
+    confirm: "Are you sure?"

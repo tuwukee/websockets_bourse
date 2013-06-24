@@ -3,13 +3,13 @@ header
     .navbar-inner#header_gradient
       .main-container
         ul.nav.pull-left
-          li.brand = link_to "Websockets Bourse", root_path
-          li = link_to "Add product", new_item_path
-          li = link_to "About", about_path
+          li.brand = link_to t("links.title"), root_path
+          li = link_to t("links.new_item"), new_item_path
+          li = link_to t("links.about"), about_path
         - if user_signed_in?
           ul.nav.pull-right
             li = link_to current_user.name, '#'
-            li = link_to "Sign Out", destroy_user_session_path, :method => :delete
+            li = link_to t("links.sign_out"), destroy_user_session_path, :method => :delete
         - else
           ul.nav.pull-right
-            li = link_to "Sign In", new_user_session_path
+            li = link_to t("links.sign_in"), new_user_session_path
