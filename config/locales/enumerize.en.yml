@@ -1,0 +1,7 @@
+en:
+  enumerize:
+    tiding:
+      kind:
+        created: "Item '%{name}' was added to store at %{date}. %{amount} pieces available."
+        bought: "%{sold_amount} of '%{name}' was bought at %{date}. Harry up! Only %{amount} pieces left!"
+        sold_out: "Item '%{name}' was sold out at %{date}. Waiting for new revenue."

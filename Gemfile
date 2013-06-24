@@ -15,3 +15,4 @@ gem 'devise'
 gem 'slim'
 gem "paperclip", "~> 3.0"
 gem 'will_paginate'
+gem 'enumerize'
