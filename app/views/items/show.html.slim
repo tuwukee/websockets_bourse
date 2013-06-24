@@ -5,3 +5,4 @@ legend = @item.name
     = image_tag @item.picture.url(:medium)
   .span4
     = link_to "Edit", edit_item_path(@item), :class => "btn right-side"
+    = link_to "Delete", item_path(@item), :method => :delete, :confirm => "Are you sure?", :class => "btn right-side"

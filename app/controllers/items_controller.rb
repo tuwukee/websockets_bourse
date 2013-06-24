@@ -3,7 +3,7 @@ class ItemsController < ApplicationController
   before_filter :authenticate_user!
 
   def index
-    @items = Item.all
+    @items = Item.paginate(:page => params[:page], :per_page => 16)
   end
 
   def new
@@ -30,6 +30,7 @@ class ItemsController < ApplicationController
 
   def destroy
     @item.destroy
+    redirect_to root_path
   end
 
   private
