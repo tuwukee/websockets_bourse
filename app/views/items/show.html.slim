@@ -1,8 +1,16 @@
 legend = @item.name
 
-.raw
+.row
   .span12
-    = image_tag @item.picture.url(:medium)
+    .row
+      .span
+        = image_tag @item.picture.url(:medium)
+      .span
+        = t("item.show.edit")
+        = @item.price
+        br
+        = t("item.show.edit")
+        = @item.amount
   .span4
     = link_to t("item.show.edit"), edit_item_path(@item), :class => "btn right-side"
     = link_to t("item.show.delete"), item_path(@item), :method => :delete, :confirm => t("application.confirm"), :class => "btn right-side"
