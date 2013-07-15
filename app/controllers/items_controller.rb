@@ -15,6 +15,7 @@ class ItemsController < ApplicationController
 
     if @item.save
       @item.sell_items.create(:user_id => current_user.id)
+      @item.tidings.create(:kind => :created)
       redirect_to @item, :notice => "Item was successfully created"
     else
       render action: "new"

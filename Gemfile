@@ -16,3 +16,5 @@ gem 'slim'
 gem "paperclip", "~> 3.0"
 gem 'will_paginate'
 gem 'enumerize'
+gem "private_pub"
+gem "thin"
