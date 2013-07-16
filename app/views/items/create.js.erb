@@ -1,3 +1,6 @@
 <% publish_to "/tidings/new" do %>
-  $("#chat").append("<%= j render(@tidings) %>");
+  $("#chat").prepend("<%= j render(@tiding) %>");
 <% end %>
+
+loc = window.location.href.replace("new","<%= @item.id %>");
+window.location.replace(loc);

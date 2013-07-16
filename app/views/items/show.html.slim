@@ -6,10 +6,10 @@ legend = @item.name
       .span
         = image_tag @item.picture.url(:medium)
       .span
-        = t("item.show.edit")
+        = t("item.show.price")
         = @item.price
         br
-        = t("item.show.edit")
+        = t("item.show.amount")
         = @item.amount
   .span4
     = link_to t("item.show.edit"), edit_item_path(@item), :class => "btn right-side"

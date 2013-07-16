@@ -3,6 +3,8 @@ en:
     show:
       edit: "Edit"
       delete: "Delete"
+      price: "Price: "
+      amount: "Amount: "
     edit:
       title: "Edit item"
       back: "Back to item"

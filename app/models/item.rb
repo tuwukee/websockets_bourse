@@ -4,7 +4,7 @@ class Item < ActiveRecord::Base
 
   validates_presence_of :amount, :name, :price
 
-  has_many :sell_items
+  has_many :sell_items, :dependent => :destroy
   has_many :users, :through => :sell_items
-  has_many :tidings
+  has_many :tidings, :dependent => :destroy
 end
