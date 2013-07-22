@@ -1,4 +1,15 @@
-.item
-  = link_to item.name, item_path(item)
-  br
-  = image_tag item.picture.url(:medium)
+.item_border
+  .item
+    = link_to item.name, item_path(item)
+    br
+    = image_tag item.picture.url(:medium)
+
+  .details
+    = form_for item, :url => items_purchase_path(item), :method => :put, :remote => :true do |f|
+      .row
+        .span
+          = f.label :amount
+          = f.number_field :amount
+        .span
+          = f.submit 'Buy!', :class => "btn"
+
