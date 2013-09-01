@@ -15,7 +15,7 @@ class ItemsController < ApplicationController
 
     if @item.save
       @item.sell_items.create(:user_id => current_user.id)
-      @tiding = @item.tidings.create(:kind => :created)
+      @tiding = @item.tidings.create(:kind => :created, :name => @item.name, :amount => @item.amount)
       respond_to do |format|
         format.js
       end
