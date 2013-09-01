@@ -1,0 +1,9 @@
+<% if @tiding %>
+  <% publish_to "/tidings/new" do %>
+    $("#chat").prepend("<%= j render(@tiding) %>");
+  <% end %>
+<% end %>
+
+
+loc = window.location.href;
+window.location.replace(loc);

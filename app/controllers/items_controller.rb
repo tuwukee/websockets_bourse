@@ -3,7 +3,7 @@ class ItemsController < ApplicationController
   before_filter :authenticate_user!
 
   def index
-    @items = Item.paginate(:page => params[:page], :per_page => 12).order('id DESC')
+    @items = Item.paginate(:page => params[:page], :per_page => 9).order('id DESC')
   end
 
   def new
@@ -35,12 +35,6 @@ class ItemsController < ApplicationController
   def destroy
     @item.destroy
     redirect_to root_path
-  end
-
-  def purchase
-    respond_to do |format|
-      format.js { render nothing: true }
-    end
   end
 
   private

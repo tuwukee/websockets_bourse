@@ -9,8 +9,7 @@ body
   .row
     .main-container
       .span#bourse-content
-        #flash-messages
-          = flash_messages
+        = render "shared/flash_messages"
         = yield
       .span
         legend#news Bourse news
