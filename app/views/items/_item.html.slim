@@ -5,11 +5,11 @@
     = image_tag item.picture.url(:medium)
 
   .details
-    = form_for item, :url => items_purchase_path(item), :method => :put, :remote => :true do |f|
+    = form_for :tiding, :remote => :true do |f|
       .row
         .span
           = f.label :amount
-          = f.number_field :amount
+          = f.number_field :sold_amount, :value => item.amount, :class => "amount_fld"
         .span
-          = f.submit 'Buy!', :class => "btn"
+          = f.submit 'Buy!', :class => "buy_btn btn btn-info"
 
