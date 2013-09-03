@@ -4,5 +4,9 @@ WebsocketsBourse::Application.routes.draw do
   resources :tidings, :only => :create
 
   get "static_pages/about", :as => :about
+
+  get "application/open_bourse", :as => :open_bourse
+  get "application/close_bourse", :as => :close_bourse
+
   root :to => "items#index"
 end

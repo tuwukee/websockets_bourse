@@ -13,3 +13,10 @@ header
         - else
           ul.nav.pull-right
             li = link_to t("links.sign_in"), new_user_session_path
+
+- if current_user && current_user.admin?
+  .main-container
+    - if Bourse.open?
+      = button_to "Close Bourse", close_bourse_path, :method => :get, :class => "btn btn-info btn-large"
+    - else
+      = button_to "Open Bourse", open_bourse_path, :method => :get, :class => "btn btn-info btn-large"

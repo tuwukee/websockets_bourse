@@ -4,6 +4,8 @@
   <% end %>
 <% end %>
 
+//loc = window.location.href;
+//window.location.replace(loc);
 
-loc = window.location.href;
-window.location.replace(loc);
+$("#flash-messages").html("<div class='alert fade in alert-<%= @type %>'><%= @msg%></div>");
+$(".alert").delay(5000).fadeIn("slow");

@@ -1,4 +1,7 @@
-legend = t("item.index.title")
+- if Bourse.open?
+  legend Bourse is open
+- else
+  legend Bourse is close
 
 .conteiner
   = render @items

@@ -1,6 +1,7 @@
 class ItemsController < ApplicationController
   before_filter :find_item, :except => [:index, :new, :create]
   before_filter :authenticate_user!
+  before_filter :open_bourse, :except => [:index]
 
   def index
     @items = Item.paginate(:page => params[:page], :per_page => 9).order('id DESC')
@@ -41,5 +42,11 @@ class ItemsController < ApplicationController
 
   def find_item
     @item = Item.find(params[:id])
+  end
+
+  def open_bourse
+    unless Bourse.open?
+      redirect_to root_path, :notice => "Bourse is close"
+    end
   end
 end
