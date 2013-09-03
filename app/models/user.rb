@@ -7,4 +7,8 @@ class User < ActiveRecord::Base
 
   has_many :sell_items
   has_many :items, :through => :sell_items
+
+  def admin?
+    admin
+  end
 end
