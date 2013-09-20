@@ -1,4 +1,4 @@
-## Websockets Bourse
+# Websockets Bourse
 
 1. This application should satisfy all basic needs of bourse members
   * anyone who open application should be asked the name
@@ -12,3 +12,5 @@
 3. Advanced admins page
   * when admin open bourse it should be added to news, new deals should be allowed
   * when admin close bourse it should be added to news, new deals should be restricted and users should be able only see list of today's deals
+4. WebRTC
+  * Video calls
