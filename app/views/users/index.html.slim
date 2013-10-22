@@ -1,0 +1,8 @@
+legend = "Users"
+
+ul.users
+  - @users.each do |user|
+    li
+      .name
+        = link_to user.name, '#'
+      = link_to user.email, '#'
