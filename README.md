@@ -14,3 +14,7 @@
   * when admin close bourse it should be added to news, new deals should be restricted and users should be able only see list of today's deals
 4. WebRTC
   * Video calls
+
+#### Start Faye
+
+  rackup private_pub.ru -s thin -E production
