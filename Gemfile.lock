@@ -91,6 +91,8 @@ GEM
     mime-types (1.23)
     multi_json (1.7.7)
     newrelic_rpm (3.6.0.83)
+    opentok (0.1.2)
+      addressable
     orm_adapter (0.4.0)
     paperclip (3.4.1)
       activemodel (>= 3.0.0)
@@ -175,6 +177,7 @@ DEPENDENCIES
   enumerize
   jquery-rails
   newrelic_rpm
+  opentok
   paperclip (~> 3.0)
   pg
   private_pub

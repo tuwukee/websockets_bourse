@@ -10,4 +10,6 @@ WebsocketsBourse::Application.routes.draw do
   get "application/close_bourse", :as => :close_bourse
 
   root :to => "items#index"
+  resources :rooms
+  match '/party/:id', :to => "rooms#party", :as => :party, :via => :get
 end

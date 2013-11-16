@@ -23,3 +23,4 @@ gem 'enumerize'
 gem "private_pub"
 gem "thin"
 gem 'newrelic_rpm'
+gem 'opentok'
